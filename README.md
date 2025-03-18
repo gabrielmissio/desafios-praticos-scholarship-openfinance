@@ -6,7 +6,6 @@
 Expandir a API criada anteriormente adicionando um novo endpoint que consulta a API do CoinGecko e fornece uma **sugestão de compra de Bitcoin** com base no preço atual.
 
 ⚠ **OBS:** Deve ser utilizado **Node.js 18 ou superior** para utilizar o módulo `fetch` nativo.
-
 ---
 
 ## **📌 Novo Endpoint: `GET /stock-insight`**  
@@ -21,7 +20,7 @@ O endpoint deve:
 
 ## **🔧 Lógica de Sugestão de Compra**
 
-Se o usuário escolher **`currency=brl`** (ou assumir `brl` na comparação):  
+Se o usuário escolher **`currency=brl`**:  
 - **< R$300.000**: `Bom momento para compra!`  
 - **Entre R$450.000 e R$300.000**: `Preço razoável. Avalie antes de comprar.`  
 - **> R$450.000**: `Bitcoin está caro. Pode ser melhor esperar.`  
